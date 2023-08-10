@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 8882329667793319865}
   - component: {fileID: 441616819579658094}
   - component: {fileID: 714216453985393683}
+  - component: {fileID: 7749649963659754577}
   m_Layer: 0
   m_Name: TT_demo_zombie 1
   m_TagString: Untagged
@@ -369,7 +370,7 @@ Animator:
   m_GameObject: {fileID: 2847323090003694347}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f88c8301226fd194cbbc64e25b20d567, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5557ca2bc0481014eb5924792242fa3e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -405,7 +406,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &714216453985393683
 CapsuleCollider:
@@ -430,6 +431,20 @@ CapsuleCollider:
   m_Height: 1.6013107
   m_Direction: 1
   m_Center: {x: 0.005684178, y: 0.7335465, z: -0.05947657}
+--- !u!114 &7749649963659754577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2847323090003694347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a84d0b065a104c4a8f3e5c10cc1e391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Velocidade: 2
 --- !u!1 &3299143454892090362
 GameObject:
   m_ObjectHideFlags: 0
