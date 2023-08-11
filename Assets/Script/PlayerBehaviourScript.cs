@@ -20,8 +20,7 @@ public class PlayerBehaviourScript : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetBool("Correndo", false);
-        }        
-
+        }    
     }
 
     void FixedUpdate()
