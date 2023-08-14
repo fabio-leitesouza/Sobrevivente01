@@ -1442,7 +1442,7 @@ PrefabInstance:
       objectReference: {fileID: 392386520}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: Velocidade
@@ -2120,7 +2120,7 @@ PrefabInstance:
       objectReference: {fileID: 392386520}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: Velocidade
@@ -2777,7 +2777,7 @@ PrefabInstance:
       objectReference: {fileID: 392386520}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: Velocidade
@@ -2851,7 +2851,7 @@ PrefabInstance:
       objectReference: {fileID: 392386520}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7749649963659754577, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
       propertyPath: Velocidade
