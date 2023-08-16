@@ -13,11 +13,7 @@ public class ControlaBala : MonoBehaviour
         if (Input.GetButtonDown ("Fire1"))
         {
             Instantiate(Bala, CanoDaArma.transform.position, CanoDaArma.transform.rotation);
-            GetComponent<Animator>().SetBool("Atirando", true);
-        }
-        else
-        {
-            GetComponent<Animator>().SetBool("Atirando", false);
+            
         }
     }
 }

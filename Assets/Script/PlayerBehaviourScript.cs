@@ -1,14 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviourScript : MonoBehaviour
 {
     public float Velocidade = 10;
     Vector3 direcao;
     public LayerMask MascaraChao;
+    public GameObject TextoGameOver;
+    public bool Vivo = true;
 
     // Update is called once per frame
+    void Start()
+    {
+        Time.timeScale = 1;
+        TextoGameOver.SetActive(false);
+    }
+
     void Update()
     {
         float eixoX = Input.GetAxis("Horizontal");
@@ -23,6 +32,13 @@ public class PlayerBehaviourScript : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetBool("Movendo", false);
+        }
+        if(Vivo == false)
+        {
+            if(Input.GetButtonDown("Fire1"))
+            {
+                SceneManager.LoadScene("game");
+            }
         }
     }
     void FixedUpdate(){

@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &301991599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -412,8 +412,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -395.375, y: -372.8387}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 33, y: 0}
+  m_SizeDelta: {x: 401.7648, y: 236.0556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301991600
 MonoBehaviour:
@@ -462,8 +462,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 78
+  m_fontSizeBase: 78
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -809,6 +809,8 @@ MonoBehaviour:
   MascaraChao:
     serializedVersion: 2
     m_Bits: 256
+  TextoGameOver: {fileID: 301991598}
+  Vivo: 1
 --- !u!95 &392386530
 Animator:
   serializedVersion: 5
