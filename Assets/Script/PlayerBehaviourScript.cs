@@ -30,10 +30,10 @@ public class PlayerBehaviourScript : MonoBehaviour
             (GetComponent<Rigidbody>().position + 
             (direcao * Time.deltaTime * Velocidade));
         Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawRay(raio.origin, raio.direction * 10, Color.red);
+        Debug.DrawRay(raio.origin, raio.direction * 100, Color.red);
 
         RaycastHit impacto;
-        if(Physics.Raycast(raio, out impacto, 10, MascaraChao))
+        if(Physics.Raycast(raio, out impacto, 100, MascaraChao))
         {
             Vector3 posicaoMiraJogador = impacto.point - transform.position;
             posicaoMiraJogador.y = transform.position.y;

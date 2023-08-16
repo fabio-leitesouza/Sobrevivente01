@@ -15,7 +15,7 @@ public class ControlaZumbi : MonoBehaviour
         Quaternion novaRotacao = Quaternion.LookRotation(direcaoJogador);
         GetComponent<Rigidbody>().MoveRotation(novaRotacao);
 
-        if(distancia > 0.25)
+        if(distancia > 2    )
         {
              Vector3 direcao = Player.transform.position - transform.position;
             GetComponent<Rigidbody>().MovePosition
