@@ -29,4 +29,10 @@ public class ControlaZumbi : MonoBehaviour
         }
        
     }
+    void AtacaJogador()
+    {
+        Time.timeScale = 0;
+        // Player.GetComponent<PlayerBehaviourScript>().TextoGameOver.SetActive(true);
+        // Player.GetComponent<PlayerBehaviourScript>().Vivo = false;
+    }
 }
