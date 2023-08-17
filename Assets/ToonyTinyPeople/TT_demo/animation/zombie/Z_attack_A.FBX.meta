@@ -195,7 +195,7 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.27710837
+      - time: 0.19766906
         functionName: AtacaJogador
         data: 
         objectReferenceParameter: {instanceID: 0}

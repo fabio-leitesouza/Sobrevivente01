@@ -17,7 +17,7 @@ public class ControlaZumbi : MonoBehaviour
 
         if(distancia > 3)
         {
-             Vector3 direcao = Player.transform.position - transform.position;
+            Vector3 direcao = Player.transform.position - transform.position;
             GetComponent<Rigidbody>().MovePosition
             (GetComponent<Rigidbody>().position + 
             (direcao.normalized * Velocidade * Time.deltaTime));
@@ -31,8 +31,18 @@ public class ControlaZumbi : MonoBehaviour
     }
     void AtacaJogador()
     {
-        Time.timeScale = 0;
-        Player.GetComponent<PlayerBehaviourScript>().TextoGameOver.SetActive(true);
-        Player.GetComponent<PlayerBehaviourScript>().Vivo = false;
+        PlayerBehaviourScript playerScript = Player.GetComponent<PlayerBehaviourScript>();
+    
+        if (playerScript.Vivo)
+        {
+          playerScript.Vida -= 1;
+
+            if (playerScript.Vida <= 0)
+            {
+                Time.timeScale = 0;
+                playerScript.TextoGameOver.SetActive(true);
+                playerScript.Vivo = false;
+            }
+        }
     }
 }   

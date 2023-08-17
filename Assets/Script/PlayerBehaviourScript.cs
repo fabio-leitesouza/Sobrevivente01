@@ -11,6 +11,7 @@ public class PlayerBehaviourScript : MonoBehaviour
     
     public GameObject TextoGameOver;
     public bool Vivo = true;
+    public int Vida = 10;
 
     // Update is called once per frame
     void Start()
@@ -41,6 +42,7 @@ public class PlayerBehaviourScript : MonoBehaviour
                 SceneManager.LoadScene("game");
             }
         }
+
     }
     void FixedUpdate(){
         GetComponent<Rigidbody>().MovePosition
@@ -58,4 +60,5 @@ public class PlayerBehaviourScript : MonoBehaviour
             GetComponent<Rigidbody>().MoveRotation(novaRotacao);
         }
     }
+     
 }
