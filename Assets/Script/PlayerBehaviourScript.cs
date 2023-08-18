@@ -55,7 +55,7 @@ public class PlayerBehaviourScript : MonoBehaviour
         if (Physics.Raycast(raio, out impacto, 100, MascaraChao))
         {
             Vector3 posicaoMiraJogador = impacto.point - transform.position;
-            posicaoMiraJogador.y = transform.position.y;
+            // posicaoMiraJogador.y = transform.position.y;
             Quaternion novaRotacao = Quaternion.LookRotation(posicaoMiraJogador);
             transform.rotation = novaRotacao;
         }

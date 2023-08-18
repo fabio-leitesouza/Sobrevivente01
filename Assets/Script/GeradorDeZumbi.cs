@@ -6,8 +6,7 @@ public class GeradorDeZumbi : MonoBehaviour
 {
     public GameObject Zumbi;
     private float contadorTempo = 0;
-    public float TempoGerarZumbi = 1;
-    
+    public float TempoGerarZumbi = 1;       
 
     void Update()
     {
