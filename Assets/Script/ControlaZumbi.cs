@@ -7,6 +7,11 @@ public class ControlaZumbi : MonoBehaviour
     public GameObject Player;
     public float Velocidade = 5;
     
+    void Start()
+    {
+        Player = GameObject.FindWithTag("Player");
+    }
+
     void FixedUpdate()
     {
         float distancia = Vector3.Distance(transform.position, Player.transform.position);
@@ -32,6 +37,7 @@ public class ControlaZumbi : MonoBehaviour
     void AtacaJogador()
     {
         PlayerBehaviourScript playerScript = Player.GetComponent<PlayerBehaviourScript>();
+        
     
         if (playerScript.Vivo)
         {
