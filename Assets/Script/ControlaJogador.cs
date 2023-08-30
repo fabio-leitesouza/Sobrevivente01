@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerBehaviourScript : MonoBehaviour
+public class ControlaJogador : MonoBehaviour
 {
     public float Velocidade = 10;
     CharacterController characterController;
@@ -11,8 +11,7 @@ public class PlayerBehaviourScript : MonoBehaviour
     public LayerMask MascaraChao;
 
     public GameObject TextoGameOver;
-    public bool Vivo = true;
-    public int Vida = 10;
+    public int Vida = 100;
 
     void Start()
     {
@@ -37,7 +36,7 @@ public class PlayerBehaviourScript : MonoBehaviour
             GetComponent<Animator>().SetBool("Movendo", false);
         }
 
-        if (!Vivo)
+        if (Vida <= 0)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -63,5 +62,14 @@ public class PlayerBehaviourScript : MonoBehaviour
         // Mova o jogador usando o CharacterController
         Vector3 movimento = direcao * Velocidade * Time.fixedDeltaTime;
         characterController.Move(movimento);
+    }
+    public void TomarDano (int dano)
+    {
+        Vida -= dano;
+        if (Vida <= 0)
+            {
+                Time.timeScale = 0;
+                TextoGameOver.SetActive(true);
+            }
     }
 }

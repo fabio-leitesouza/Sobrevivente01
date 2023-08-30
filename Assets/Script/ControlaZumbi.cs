@@ -36,19 +36,8 @@ public class ControlaZumbi : MonoBehaviour
     }
     void AtacaJogador()
     {
-        PlayerBehaviourScript playerScript = Player.GetComponent<PlayerBehaviourScript>();
-        
-    
-        if (playerScript.Vivo)
-        {
-          playerScript.Vida -= 1;
-
-            if (playerScript.Vida <= 0)
-            {
-                Time.timeScale = 0;
-                playerScript.TextoGameOver.SetActive(true);
-                playerScript.Vivo = false;
-            }
-        }
+        int dano = Random.Range(20, 30);
+        ControlaJogador playerScript = Player.GetComponent<ControlaJogador>();
+        playerScript.TomarDano(dano);        
     }
 }   
