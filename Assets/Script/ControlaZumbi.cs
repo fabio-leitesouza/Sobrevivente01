@@ -31,8 +31,7 @@ public class ControlaZumbi : MonoBehaviour
         else
         {
             GetComponent<Animator>().SetBool("Ataque", true);
-        }
-       
+        }       
     }
     void AtacaJogador()
     {
