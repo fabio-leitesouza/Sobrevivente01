@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class ControlaJogador : MonoBehaviour
 {
     public float Velocidade = 10;
-    CharacterController characterController;
-    Vector3 direcao;
+    private CharacterController characterController;
+    private Vector3 direcao;
     public LayerMask MascaraChao;
 
     public GameObject TextoGameOver;
