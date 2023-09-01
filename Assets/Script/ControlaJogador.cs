@@ -12,6 +12,7 @@ public class ControlaJogador : MonoBehaviour
 
     public GameObject TextoGameOver;
     public int Vida = 100;
+    public ControlaInterface scriptControlaInteface;
 
     void Start()
     {
@@ -66,6 +67,7 @@ public class ControlaJogador : MonoBehaviour
     public void TomarDano (int dano)
     {
         Vida -= dano;
+        scriptControlaInteface.AtualizaSlideVidaJogador();
         if (Vida <= 0)
             {
                 Time.timeScale = 0;
