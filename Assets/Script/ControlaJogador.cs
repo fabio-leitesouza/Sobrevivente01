@@ -15,11 +15,11 @@ public class ControlaJogador : MonoBehaviour
     public int Vida = 100;
     public ControlaInterface scriptControlaInteface;
     public AudioClip SomDeDano; // Audio de dano
-    public AudioClip SomDeMorte;
+    public AudioClip SomDeMorte; // Audio de morte
     
     void Start()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         TextoGameOver.SetActive(false);
         characterController = GetComponent<CharacterController>();
     }
@@ -71,7 +71,8 @@ public class ControlaJogador : MonoBehaviour
     {
         Vida -= dano;
         scriptControlaInteface.AtualizaSlideVidaJogador();
-        ControlaAudio.instance.PlayOneShot(SomDeDano); // Toca o som de dano
+       
+       Toca o som de dano
         if (Vida <= 0)
             {
                 ControlaAudio.instance.PlayOneShot(SomDeMorte); // Toca o som de morte
