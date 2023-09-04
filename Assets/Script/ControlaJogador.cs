@@ -70,9 +70,8 @@ public class ControlaJogador : MonoBehaviour
     public void TomarDano (int dano)
     {
         Vida -= dano;
-        scriptControlaInteface.AtualizaSlideVidaJogador();
-       
-       Toca o som de dano
+        scriptControlaInteface.AtualizaSlideVidaJogador();       
+        ControlaAudio.instance.PlayOneShot(SomDeDano); //Toca o som de dano
         if (Vida <= 0)
             {
                 ControlaAudio.instance.PlayOneShot(SomDeMorte); // Toca o som de morte
