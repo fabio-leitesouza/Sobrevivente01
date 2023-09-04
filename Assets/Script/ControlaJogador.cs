@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ControlaJogador : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class ControlaJogador : MonoBehaviour
     public GameObject TextoGameOver;
     public int Vida = 100;
     public ControlaInterface scriptControlaInteface;
-
+    public AudioClip SomDeDano; // Audio de dano
+    
     void Start()
     {
         Time.timeScale = 1;
@@ -68,6 +70,7 @@ public class ControlaJogador : MonoBehaviour
     {
         Vida -= dano;
         scriptControlaInteface.AtualizaSlideVidaJogador();
+        ControlaAudio.instance.PlayOneShot(SomDeDano); // Toca o som de dano
         if (Vida <= 0)
             {
                 Time.timeScale = 0;
