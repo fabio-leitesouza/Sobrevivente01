@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ControlaJogador : MonoBehaviour
 {
-    public float Velocidade = 10;
-    private CharacterController characterController;
+    public float Velocidade = 10; // Velocidade de movimento
+    private CharacterController characterController; // Componente CharacterController
     private Vector3 direcao;
     public LayerMask MascaraChao;
 
@@ -15,10 +15,11 @@ public class ControlaJogador : MonoBehaviour
     public int Vida = 100;
     public ControlaInterface scriptControlaInteface;
     public AudioClip SomDeDano; // Audio de dano
+    public AudioClip SomDeMorte;
     
     void Start()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
         TextoGameOver.SetActive(false);
         characterController = GetComponent<CharacterController>();
     }
@@ -73,6 +74,7 @@ public class ControlaJogador : MonoBehaviour
         ControlaAudio.instance.PlayOneShot(SomDeDano); // Toca o som de dano
         if (Vida <= 0)
             {
+                ControlaAudio.instance.PlayOneShot(SomDeMorte); // Toca o som de morte
                 Time.timeScale = 0;
                 TextoGameOver.SetActive(true);
             }

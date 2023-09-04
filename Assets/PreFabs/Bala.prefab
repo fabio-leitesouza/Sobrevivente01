@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9406f9e861861e7409b38ce333fa711e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocidade: 40
+  Velocidade: 80
   SomDeMorte: {fileID: 8300000, guid: 641d10973d359e448a14969f39abab2e, type: 3}
 --- !u!54 &4096746251931288812
 Rigidbody:
