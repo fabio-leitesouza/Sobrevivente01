@@ -6174,7 +6174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 2847323090003694347, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
-  TempoGerarZumbi: 1
+  TempoGerarZumbi: 5
 --- !u!1001 &917718538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6450,7 +6450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 2847323090003694347, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
-  TempoGerarZumbi: 1
+  TempoGerarZumbi: 5
 --- !u!1001 &1048050547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9186,7 +9186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 2847323090003694347, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
-  TempoGerarZumbi: 0.8
+  TempoGerarZumbi: 5
 --- !u!4 &1863129980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 494214, guid: c2d37f0b68e0ddd45aa1303143496927, type: 3}
@@ -9237,7 +9237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 2847323090003694347, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
-  TempoGerarZumbi: 0.6
+  TempoGerarZumbi: 5
 --- !u!1 &1897929465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1359257449384332, guid: bf458b1016379c74a9a979aa0ba9e250, type: 3}
@@ -9975,7 +9975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Zumbi: {fileID: 2847323090003694347, guid: 33c7a0a9f7ffe7f4989b6fe6ac81f767, type: 3}
-  TempoGerarZumbi: 1
+  TempoGerarZumbi: 5
 --- !u!4 &2067301380
 Transform:
   m_ObjectHideFlags: 0
